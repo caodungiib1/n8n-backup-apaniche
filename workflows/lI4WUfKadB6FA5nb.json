@@ -1,0 +1,1418 @@
+{
+  "active": false,
+  "connections": {
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets3": {
+      "main": [
+        [
+          {
+            "node": "Telegram",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request3": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If3": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Google Sheets4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Code3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tiện Ích Mọi Nhà - caodungiib1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code3": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request15": {
+      "main": [
+        [
+          {
+            "node": "Code4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code4": {
+      "main": [
+        [
+          {
+            "node": "If4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If4": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond to Webhook1": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets5": {
+      "main": [
+        [
+          {
+            "node": "Telegram1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2026-01-31T06:02:17.649Z",
+  "id": "lI4WUfKadB6FA5nb",
+  "meta": null,
+  "name": "Rep Bính Luận + Nhăn Tin - 14/01/2026",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất.\nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\n\"Bạn ơi 👋, mình gửi bạn link sản phẩm này nhé:\"\n\nYêu cầu:\nKhông thêm link.\nKhông thêm text trước câu trả lời.\nChỉ trả về 1 câu hoàn chỉnh.\nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước.\nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        2880,
+        820
+      ],
+      "id": "9929ed3f-1c0e-4688-aac7-7d7a68b61c7e",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 76027938,
+          "mode": "list",
+          "cachedResultName": "Tông Hợp Comment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Post id",
+              "lookupValue": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        980,
+        840
+      ],
+      "id": "dc3f1eaf-e5fc-4cab-8105-fdb3aaf874ac",
+      "name": "Google Sheets",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ee087355-1f0d-49c4-b08a-eab36d598a24",
+              "leftValue": "={{ $('Google Sheets').item.json[\"Link Shopee\"] }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "1b4c24c6-f3bc-492e-af20-fc92a156c26b",
+              "leftValue": "={{ $json.notExistInSheet }}",
+              "rightValue": "=false",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1360,
+        840
+      ],
+      "id": "cf454d05-6e8f-4ccc-a849-3bdce0891de6",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "chatId": "5553479863",
+        "text": "=Bài này đang chưa có link shopee nè: \n<a href=\"{{ $json[\"Link Facebook\"] }}\">Xem video Facebook</a>",
+        "replyMarkup": "forceReply",
+        "forceReply": {},
+        "additionalFields": {
+          "appendAttribution": false,
+          "parse_mode": "HTML"
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1640,
+        1180
+      ],
+      "id": "7ef337f3-f88f-4ff3-b371-839f8010945d",
+      "name": "Telegram",
+      "webhookId": "c8f16196-d76b-439c-936d-a731d4266b45",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {
+        "updates": [
+          "callback_query",
+          "message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -280,
+        220
+      ],
+      "id": "82d1e9fc-a8b9-4342-997c-8551f941566f",
+      "name": "Telegram Trigger",
+      "webhookId": "08cc14c5-9eb6-4685-b847-7012f926b121",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 76027938,
+          "mode": "list",
+          "cachedResultName": "Tông Hợp Comment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Link Facebook": "={{ $json.message.reply_to_message.entities[0].url }}",
+            "Link Shopee": "={{ $json.message.text }}"
+          },
+          "matchingColumns": [
+            "Link Facebook"
+          ],
+          "schema": [
+            {
+              "id": "Link Facebook",
+              "displayName": "Link Facebook",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Post id",
+              "displayName": "Post id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Comtemt Chưa Rep",
+              "displayName": "Comtemt Chưa Rep",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        20,
+        220
+      ],
+      "id": "f1389d85-2888-4d59-ae20-393c68dcfee8",
+      "name": "Google Sheets2",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }} {{ $('Code1').item.json.LinkShopee }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request1').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3300,
+        820
+      ],
+      "id": "3928750a-0f92-48dc-b5d5-82ddea4c3a44",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 76027938,
+          "mode": "list",
+          "cachedResultName": "Tông Hợp Comment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Link Facebook": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post.permalink_url.replace(/\\/+$/, '') }}",
+            "Post id": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post_id }}",
+            "Comtemt Chưa Rep": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}"
+          },
+          "matchingColumns": [
+            "Link Video Tiktok"
+          ],
+          "schema": [
+            {
+              "id": "Link Facebook",
+              "displayName": "Link Facebook",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Post id",
+              "displayName": "Post id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Comtemt Chưa Rep",
+              "displayName": "Comtemt Chưa Rep",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1380,
+        1180
+      ],
+      "id": "c67402ef-610d-429b-8376-1c07f108464a",
+      "name": "Google Sheets3"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ ($('Google Sheets').item.json['Post id'] || '').split('_').shift() }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2000,
+        820
+      ],
+      "id": "e8456a00-3a84-41e5-be2c-c65a8392d955",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "82a17fd2-ce5c-4957-ba4d-e55b0ec133a2",
+              "leftValue": "={{ $json.result }}",
+              "rightValue": "=user",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            },
+            {
+              "id": "25d6310d-d017-4bea-b849-a2d0fcc53602",
+              "leftValue": "={{ $json.result }}",
+              "rightValue": "User",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        740,
+        860
+      ],
+      "id": "9d1736ac-0d31-4a4d-97f1-0ade6babc880",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất.\nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\n\"Bạn ơi 👋, mình gửi bạn link sản phẩm này nhé:\"\n\nYêu cầu:\nKhông thêm link.\nKhông thêm text trước câu trả lời.\nChỉ trả về 1 câu hoàn chỉnh.\nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước.\nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        1500,
+        340
+      ],
+      "id": "b4b0af1a-a261-48b8-81e3-df6bc57a5c22",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1440,
+        560
+      ],
+      "id": "ace8d4f8-6a8a-44b4-87e4-859ef0444973",
+      "name": "Google Gemini Chat Model"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Loop Over Items').item.json.comment_status }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }} {{ $('Code3').item.json.LinkShopee }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request3').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1920,
+        340
+      ],
+      "id": "4c4cc60a-dee5-4fea-933e-e62699d1b097",
+      "name": "HTTP Request2"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ ($json[\"Post id\"] || '').split('_').shift() }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        540,
+        220
+      ],
+      "id": "ec0fd9c2-bb16-404c-9928-936267c30dab",
+      "name": "HTTP Request3"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 76027938,
+          "mode": "list",
+          "cachedResultName": "Tông Hợp Comment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Link Facebook",
+              "lookupValue": "={{ $json[\"Link Facebook\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        280,
+        220
+      ],
+      "id": "cd2df041-ffe0-4e82-9af1-68546c86941e",
+      "name": "Google Sheets1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "823da096-60b5-41e4-ba11-96a6e29ccf0b",
+              "leftValue": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        220,
+        880
+      ],
+      "id": "dcb5479d-b4cc-447b-94a0-d8ff38cfa0d9",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "59c73f6b-a4ea-4005-9038-877fb03104b5",
+              "leftValue": "={{ $json.rawItems[0][\"Comtemt Chưa Rep\"] }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1040,
+        1280
+      ],
+      "id": "86bd749a-38b1-4096-89a0-645143538162",
+      "name": "If3"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 76027938,
+          "mode": "list",
+          "cachedResultName": "Tông Hợp Comment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Comtemt Chưa Rep": "={{ $('Google Sheets').item.json[\"Comtemt Chưa Rep\"] + '\\n' + $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}",
+            "Post id": "={{ $('Webhook1').item.json.body.entry[0].changes[0].value.post_id }}"
+          },
+          "matchingColumns": [
+            "Post id"
+          ],
+          "schema": [
+            {
+              "id": "Link Video Tiktok",
+              "displayName": "Link Video Tiktok",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link Facebook",
+              "displayName": "Link Facebook",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Post id",
+              "displayName": "Post id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Link Shopee",
+              "displayName": "Link Shopee",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Comtemt Chưa Rep",
+              "displayName": "Comtemt Chưa Rep",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1380,
+        1360
+      ],
+      "id": "b04f1760-ce82-4524-ac11-caa082fd9e84",
+      "name": "Google Sheets4"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1040,
+        220
+      ],
+      "id": "525d159a-ea37-43a2-8e22-7fc8d7bcab62",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "jsCode": "const postId = $('Google Sheets1').item.json['Post id'];\nconst inputString = $('Google Sheets1').item.json['Comtemt Chưa Rep'] || \"\";\n\n// Tách các dòng từ cột \"Comtemt Chưa Rep\"\nconst commentLines = inputString\n  .split('\\n')\n  .map(l => l.trim())\n  .filter(Boolean);\n\n// Ghép postId thành item đầu tiên\nconst result = [\n  {\n    json: {\n      comment_status: postId\n    }\n  },\n  ...commentLines.map(line => ({\n    json: {\n      comment_status: line\n    }\n  }))\n];\n\nreturn result;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        800,
+        220
+      ],
+      "id": "87679bbb-7409-443f-b7df-908fe71e6df7",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2140,
+        340
+      ],
+      "id": "0081d1e7-eddd-4797-9c4e-55905fab370b",
+      "name": "Wait",
+      "webhookId": "311f3e9d-3397-47b2-b139-6abe588fa274"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        2880,
+        1000
+      ],
+      "id": "0c8ae5cd-de00-4785-8718-2b759e68134c",
+      "name": "Tiện Ích Mọi Nhà - caodungiib1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy chuỗi link từ Google Sheets\nconst gs = $item(0).$node[\"Google Sheets\"].json;\nconst text = gs[\"Link Shopee\"];\n\n// Tách theo xuống dòng (cả \\n hoặc \\r\\n)\nconst links = text.split(/\\r?\\n/).map(l => l.trim()).filter(l => l !== '');\n\n// Random 1 link trong danh sách\nconst randomLink = links[Math.floor(Math.random() * links.length)];\n\n// Tạo đoạn random để tránh spam Facebook\nconst randomParam = Math.random().toString(36).substring(2, 8);\n\n// Gắn UTM/tham số random vào link Shopee\nconst finalLink = `${randomLink}?fb=${randomParam}`;\n\nreturn [\n  {\n    json: {\n      LinkShopee: finalLink\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1580,
+        820
+      ],
+      "id": "babf13b7-2139-4029-a94a-18802ff1baac",
+      "name": "Code1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy chuỗi link từ Google Sheets\nconst gs = $item(0).$node[\"Google Sheets1\"].json;\nconst text = gs[\"Link Shopee\"];\n\n// Tách theo xuống dòng (cả \\n hoặc \\r\\n)\nconst links = text.split(/\\r?\\n/).map(l => l.trim()).filter(l => l !== '');\n\n// Random 1 link trong danh sách\nconst randomLink = links[Math.floor(Math.random() * links.length)];\n\n// Tạo đoạn random để tránh spam Facebook\nconst randomParam = Math.random().toString(36).substring(2, 8);\n\n// Gắn UTM/tham số random vào link Shopee\nconst finalLink = `${randomLink}?fb=${randomParam}`;\n\nreturn [\n  {\n    json: {\n      LinkShopee: finalLink\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1260,
+        340
+      ],
+      "id": "e437294f-8100-4a7d-8046-2f7c39aab713",
+      "name": "Code3"
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "minutes"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1800,
+        820
+      ],
+      "id": "80439dab-3b36-4433-9562-7564d300d048",
+      "name": "Wait1",
+      "webhookId": "3c2cbbe6-ddae-4a7a-b2cb-2b206905c6ba"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request1').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2200,
+        820
+      ],
+      "id": "85a12c8e-8d82-48a6-8a8e-50e61fd4602c",
+      "name": "HTTP Request15"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.item.json.body.data;\n\n// Nếu mảng data có ít nhất 1 reply\nif (Array.isArray(data) && data.length > 0) {\n    return [{ status: \"ĐÃ REP COMMENT\", replied: true }];\n} else {\n    return [{ status: \"CHƯA REP COMMENT\", replied: false }];\n}"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2400,
+        820
+      ],
+      "id": "eab6af8a-4544-4c18-a02f-328043d5caf0",
+      "name": "Code4"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "84d5de05-ac51-4114-9f62-39f27f715d15",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "CHƯA REP COMMENT",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2620,
+        820
+      ],
+      "id": "56836802-3971-4e2d-b251-6fcf058d86c6",
+      "name": "If4"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query['hub.challenge'] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        680
+      ],
+      "id": "7bab4ddd-ea94-4121-be6b-0849c254ef0d",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        880
+      ],
+      "id": "af340661-1edd-4634-a1bb-6a5970a99428",
+      "name": "Respond to Webhook1"
+    },
+    {
+      "parameters": {
+        "multipleMethods": true,
+        "path": "Comment",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -240,
+        860
+      ],
+      "id": "e05e457d-7ae0-4e3f-84f0-60c4a2ee254f",
+      "name": "Webhook1",
+      "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
+    },
+    {
+      "parameters": {
+        "jsCode": "// items từ node trước\nconst items = $input.all().map(i => i.json);\n\n// Hàm check tồn tại\nfunction isNotExistInSheet(items) {\n  if (!items) return true;\n\n  // []\n  if (items.length === 0) return true;\n\n  // [{}]\n  if (\n    items.length === 1 &&\n    typeof items[0] === 'object' &&\n    Object.keys(items[0]).length === 0\n  ) {\n    return true;\n  }\n\n  return false;\n}\n\nconst notExist = isNotExistInSheet(items);\n\nreturn [\n  {\n    json: {\n      notExistInSheet: notExist,\n      rawItems: items\n    }\n  }\n];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1180,
+        840
+      ],
+      "id": "ebe0522c-24fa-480c-9dc5-f61f0bc0dcfa",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "jsCode": "const pageIds = [\n  \"603490756190502\",\n  \"714667461724221\",\n  \"656708390864429\",\n  \"692768803911413\",\n  \"934090693112018\",\n  \"509555248913413\",\n  \"540957532433392\",\n  \"177096022156496\",\n  \"663128990217389\",\n  \"112337135264520\",\n  \"1003578112830988\",\n  \"999838376537715\",\n  \"950781038117688\",\n  \"949280091602120\",\n  \"739479335907200\",\n  \"935188229682622\",\n  \"932010909997493\",\n  \"885221808015195\",\n  \"909566812248641\",\n  \"923017730901485\"\n];\n\nconst userId = String($json.body.entry[0].changes[0].value.from.id);\n\nreturn [{\n  result: pageIds.includes(userId) ? \"Page\" : \"User\"\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        860
+      ],
+      "id": "015084e6-2c05-42b7-ab17-0f8f5ae5e853",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "chatId": "5553479863",
+        "text": "=Bài này đang chưa có link shopee nè: \n<a href=\"{{ $json[\"Link Facebook\"] }}\">Xem video Facebook</a>",
+        "replyMarkup": "forceReply",
+        "forceReply": {},
+        "additionalFields": {
+          "appendAttribution": false,
+          "parse_mode": "HTML"
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        560,
+        0
+      ],
+      "id": "8a570248-06f7-4306-a6d8-6f1840dce383",
+      "name": "Telegram1",
+      "webhookId": "c8f16196-d76b-439c-936d-a731d4266b45",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
+          "mode": "list"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 76027938,
+          "mode": "list",
+          "cachedResultName": "Tông Hợp Comment",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit#gid=76027938"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "Link Shopee"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        300,
+        0
+      ],
+      "id": "0995570c-159b-4530-93b3-60f4a616f4cc",
+      "name": "Google Sheets5"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "5db3c301-f0f8-4414-82eb-4feb45571dab",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-01-31T06:02:23.000Z",
+  "versionId": "a9fe1f14-009b-4a4d-9193-4d220ac56fb8"
+}
