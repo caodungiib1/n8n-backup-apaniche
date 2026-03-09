@@ -878,7 +878,7 @@
       "typeVersion": 1,
       "position": [
         3600,
-        1080
+        1100
       ],
       "id": "2f8477bd-8458-469f-b9f6-bff569e626e3",
       "name": "Google Gemini Chat Model",
@@ -1759,6 +1759,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-03-09T12:26:01.000Z",
-  "versionId": "4022fcbd-a624-4ab8-b985-6c706b208115"
+  "updatedAt": "2026-03-09T14:43:33.000Z",
+  "versionId": "039f42a1-5ccd-4ede-b240-0df3c607d74e"
 }
