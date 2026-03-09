@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "connections": {
     "Google Sheets": {
       "main": [
@@ -485,7 +485,13 @@
       ],
       "id": "a39ad8e4-54cf-4ac1-96ed-8bde3fab02a3",
       "name": "Google Sheets",
-      "alwaysOutputData": true
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -551,7 +557,13 @@
       "id": "3265d1ce-694c-4e66-a977-8ec5b45bb7e4",
       "name": "Telegram",
       "webhookId": "c8f16196-d76b-439c-936d-a731d4266b45",
-      "notesInFlow": true
+      "notesInFlow": true,
+      "credentials": {
+        "telegramApi": {
+          "id": "h2Z864jcARoEdILF",
+          "name": "Hỗ trợ đăng bài"
+        }
+      }
     },
     {
       "parameters": {
@@ -570,7 +582,13 @@
       "id": "5c81b7c9-4732-4e19-92b7-e798285feb3e",
       "name": "Telegram Trigger",
       "webhookId": "08cc14c5-9eb6-4685-b847-7012f926b121",
-      "notesInFlow": true
+      "notesInFlow": true,
+      "credentials": {
+        "telegramApi": {
+          "id": "h2Z864jcARoEdILF",
+          "name": "Hỗ trợ đăng bài"
+        }
+      }
     },
     {
       "parameters": {
@@ -664,7 +682,13 @@
       ],
       "id": "956445bd-494d-4b08-9221-0c20cb53f132",
       "name": "Google Sheets2",
-      "alwaysOutputData": false
+      "alwaysOutputData": false,
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -746,7 +770,13 @@
         1640
       ],
       "id": "92305908-8f31-4894-94b1-cbb893ff0363",
-      "name": "Google Sheets3"
+      "name": "Google Sheets3",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -841,6 +871,7 @@
     },
     {
       "parameters": {
+        "modelName": "models/gemini-2.5-flash",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
@@ -850,7 +881,13 @@
         1080
       ],
       "id": "2f8477bd-8458-469f-b9f6-bff569e626e3",
-      "name": "Google Gemini Chat Model"
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "qZFQ5JYRlE4Vo0fV",
+          "name": "Centerno08"
+        }
+      }
     },
     {
       "parameters": {
@@ -953,7 +990,13 @@
         680
       ],
       "id": "7fc500b6-38da-441c-8106-6cc50423c570",
-      "name": "Google Sheets1"
+      "name": "Google Sheets1",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -1124,7 +1167,13 @@
         1840
       ],
       "id": "0d035fed-e114-4fe8-91af-bf7a275d8afe",
-      "name": "Google Sheets4"
+      "name": "Google Sheets4",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {
@@ -1377,7 +1426,13 @@
       "id": "fce91f81-8fc4-409a-b5f6-7508888ed8b2",
       "name": "Telegram1",
       "webhookId": "c8f16196-d76b-439c-936d-a731d4266b45",
-      "notesInFlow": true
+      "notesInFlow": true,
+      "credentials": {
+        "telegramApi": {
+          "id": "h2Z864jcARoEdILF",
+          "name": "Hỗ trợ đăng bài"
+        }
+      }
     },
     {
       "parameters": {
@@ -1385,7 +1440,9 @@
         "documentId": {
           "__rl": true,
           "value": "1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI",
-          "mode": "list"
+          "mode": "list",
+          "cachedResultName": "Đăng Bài Tự Động",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1kEnK_MDgJ1iKhjqXU-odhyJmXuzvtOxVrdQyrwvwUoI/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
@@ -1410,7 +1467,13 @@
         480
       ],
       "id": "603d66fe-c59e-4d1e-b155-8122caa42d40",
-      "name": "Google Sheets5"
+      "name": "Google Sheets5",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
     },
     {
       "parameters": {},
@@ -1670,6 +1733,7 @@
     },
     {
       "parameters": {
+        "modelName": "models/gemini-2.5-flash",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
@@ -1679,7 +1743,13 @@
         1480
       ],
       "id": "de4afbe2-ff18-493a-a70a-f24011ad574d",
-      "name": "Google Gemini Chat Model1"
+      "name": "Google Gemini Chat Model1",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "qZFQ5JYRlE4Vo0fV",
+          "name": "Centerno08"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -1688,7 +1758,7 @@
   },
   "staticData": null,
   "tags": [],
-  "triggerCount": 0,
-  "updatedAt": "2026-03-09T11:13:21.000Z",
-  "versionId": "093e255c-d959-498c-b282-ce641f18d983"
+  "triggerCount": 2,
+  "updatedAt": "2026-03-09T12:26:01.000Z",
+  "versionId": "4022fcbd-a624-4ab8-b985-6c706b208115"
 }
