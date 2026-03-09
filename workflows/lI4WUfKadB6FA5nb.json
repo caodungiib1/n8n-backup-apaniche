@@ -1,17 +1,6 @@
 {
   "active": false,
   "connections": {
-    "AI Agent1": {
-      "main": [
-        [
-          {
-            "node": "HTTP Request",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Google Sheets": {
       "main": [
         [
@@ -114,6 +103,11 @@
             "node": "AI Agent",
             "type": "ai_languageModel",
             "index": 0
+          },
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
           }
         ]
       ]
@@ -185,7 +179,7 @@
         [],
         [
           {
-            "node": "Code3",
+            "node": "If5",
             "type": "main",
             "index": 0
           }
@@ -209,17 +203,6 @@
           {
             "node": "Loop Over Items",
             "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Tiện Ích Mọi Nhà - caodungiib1": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent1",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -284,7 +267,7 @@
       "main": [
         [
           {
-            "node": "AI Agent1",
+            "node": "AI Agent2",
             "type": "main",
             "index": 0
           }
@@ -363,28 +346,110 @@
           }
         ]
       ]
+    },
+    "HTTP Request5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request13": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request13",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request4": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "createdAt": "2026-01-31T06:02:17.649Z",
   "id": "lI4WUfKadB6FA5nb",
-  "meta": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
   "name": "Rep Bính Luận + Nhăn Tin - 14/01/2026",
   "nodes": [
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất.\nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\n\"Bạn ơi 👋, mình gửi bạn link sản phẩm này nhé:\"\n\nYêu cầu:\nKhông thêm link.\nKhông thêm text trước câu trả lời.\nChỉ trả về 1 câu hoàn chỉnh.\nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước.\nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.8,
-      "position": [
-        2880,
-        820
-      ],
-      "id": "9929ed3f-1c0e-4688-aac7-7d7a68b61c7e",
-      "name": "AI Agent1"
-    },
     {
       "parameters": {
         "authentication": "serviceAccount",
@@ -415,10 +480,10 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        980,
-        840
+        3540,
+        1320
       ],
-      "id": "dc3f1eaf-e5fc-4cab-8105-fdb3aaf874ac",
+      "id": "a39ad8e4-54cf-4ac1-96ed-8bde3fab02a3",
       "name": "Google Sheets",
       "alwaysOutputData": true
     },
@@ -460,10 +525,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1360,
-        840
+        3900,
+        1320
       ],
-      "id": "cf454d05-6e8f-4ccc-a849-3bdce0891de6",
+      "id": "5c202dc8-69c7-4c27-b5ba-1f9ac2e64439",
       "name": "If"
     },
     {
@@ -480,10 +545,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        1640,
-        1180
+        4200,
+        1640
       ],
-      "id": "7ef337f3-f88f-4ff3-b371-839f8010945d",
+      "id": "3265d1ce-694c-4e66-a977-8ec5b45bb7e4",
       "name": "Telegram",
       "webhookId": "c8f16196-d76b-439c-936d-a731d4266b45",
       "notesInFlow": true
@@ -499,10 +564,10 @@
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.1,
       "position": [
-        -280,
-        220
+        2280,
+        680
       ],
-      "id": "82d1e9fc-a8b9-4342-997c-8551f941566f",
+      "id": "5c81b7c9-4732-4e19-92b7-e798285feb3e",
       "name": "Telegram Trigger",
       "webhookId": "08cc14c5-9eb6-4685-b847-7012f926b121",
       "notesInFlow": true
@@ -594,46 +659,12 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        20,
-        220
+        2580,
+        680
       ],
-      "id": "f1389d85-2888-4d59-ae20-393c68dcfee8",
+      "id": "956445bd-494d-4b08-9221-0c20cb53f132",
       "name": "Google Sheets2",
       "alwaysOutputData": false
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
-        "sendQuery": true,
-        "queryParameters": {
-          "parameters": [
-            {
-              "name": "message",
-              "value": "={{ $json.output }} {{ $('Code1').item.json.LinkShopee }}"
-            },
-            {
-              "name": "access_token",
-              "value": "={{ $('HTTP Request1').item.json.body.access_token }}"
-            }
-          ]
-        },
-        "options": {
-          "response": {
-            "response": {
-              "fullResponse": true
-            }
-          }
-        }
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        3300,
-        820
-      ],
-      "id": "3928750a-0f92-48dc-b5d5-82ddea4c3a44",
-      "name": "HTTP Request"
     },
     {
       "parameters": {
@@ -711,10 +742,10 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1380,
-        1180
+        3940,
+        1640
       ],
-      "id": "c67402ef-610d-429b-8376-1c07f108464a",
+      "id": "92305908-8f31-4894-94b1-cbb893ff0363",
       "name": "Google Sheets3"
     },
     {
@@ -744,10 +775,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2000,
-        820
+        4560,
+        1300
       ],
-      "id": "e8456a00-3a84-41e5-be2c-c65a8392d955",
+      "id": "bbff78d2-6520-498b-a4ea-b0cb3d1c4eed",
       "name": "HTTP Request1"
     },
     {
@@ -787,25 +818,25 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        740,
-        860
+        3300,
+        1320
       ],
-      "id": "9d1736ac-0d31-4a4d-97f1-0ade6babc880",
+      "id": "233f8371-8d53-4174-b680-526c5025d778",
       "name": "If1"
     },
     {
       "parameters": {
         "promptType": "define",
-        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất.\nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\n\"Bạn ơi 👋, mình gửi bạn link sản phẩm này nhé:\"\n\nYêu cầu:\nKhông thêm link.\nKhông thêm text trước câu trả lời.\nChỉ trả về 1 câu hoàn chỉnh.\nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước.\nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
+        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất. \nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\"Cảm ơn bạn đã quan tâm! Mình đã gửi thông tin chi tiết và link sản phẩm vào tin nhắn cho bạn rồi nhé. Vui lòng kiểm tra hộp thư Messenger ạ!\"\n\nYêu cầu: \nKhông thêm link. \nKhông thêm text trước câu trả lời. Chỉ trả về 1 câu hoàn chỉnh. \nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước. \nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        1500,
-        340
+        4260,
+        820
       ],
-      "id": "b4b0af1a-a261-48b8-81e3-df6bc57a5c22",
+      "id": "b2acfd89-813a-4bd3-ae6a-eed1104bfac6",
       "name": "AI Agent"
     },
     {
@@ -815,10 +846,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
       "position": [
-        1440,
-        560
+        3600,
+        1080
       ],
-      "id": "ace8d4f8-6a8a-44b4-87e4-859ef0444973",
+      "id": "2f8477bd-8458-469f-b9f6-bff569e626e3",
       "name": "Google Gemini Chat Model"
     },
     {
@@ -830,7 +861,7 @@
           "parameters": [
             {
               "name": "message",
-              "value": "={{ $json.output }} {{ $('Code3').item.json.LinkShopee }}"
+              "value": "={{ $json.output }} {{ $('Google Sheets1').item.json['Link Shopee'] }}"
             },
             {
               "name": "access_token",
@@ -849,10 +880,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1920,
-        340
+        4900,
+        820
       ],
-      "id": "4c4cc60a-dee5-4fea-933e-e62699d1b097",
+      "id": "0f783716-eef5-4af0-8509-31eec77ba263",
       "name": "HTTP Request2"
     },
     {
@@ -882,10 +913,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        540,
-        220
+        3080,
+        680
       ],
-      "id": "ec0fd9c2-bb16-404c-9928-936267c30dab",
+      "id": "369e09e2-c1e1-4d70-ab9d-c782daecf2b3",
       "name": "HTTP Request3"
     },
     {
@@ -918,10 +949,10 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        280,
-        220
+        2840,
+        680
       ],
-      "id": "cd2df041-ffe0-4e82-9af1-68546c86941e",
+      "id": "7fc500b6-38da-441c-8106-6cc50423c570",
       "name": "Google Sheets1"
     },
     {
@@ -952,10 +983,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        220,
-        880
+        2760,
+        1340
       ],
-      "id": "dcb5479d-b4cc-447b-94a0-d8ff38cfa0d9",
+      "id": "90c96be1-43e9-4d5a-8888-dd96edade2c6",
       "name": "If2"
     },
     {
@@ -986,10 +1017,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1040,
-        1280
+        3580,
+        1740
       ],
-      "id": "86bd749a-38b1-4096-89a0-645143538162",
+      "id": "eebe89d2-a2cf-4102-b045-d6e2a725365d",
       "name": "If3"
     },
     {
@@ -1089,10 +1120,10 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        1380,
-        1360
+        3940,
+        1840
       ],
-      "id": "b04f1760-ce82-4524-ac11-caa082fd9e84",
+      "id": "0d035fed-e114-4fe8-91af-bf7a275d8afe",
       "name": "Google Sheets4"
     },
     {
@@ -1102,10 +1133,10 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        1040,
-        220
+        3560,
+        680
       ],
-      "id": "525d159a-ea37-43a2-8e22-7fc8d7bcab62",
+      "id": "9b11458a-7b6c-4288-8d9f-a24b1901abe2",
       "name": "Loop Over Items"
     },
     {
@@ -1115,10 +1146,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        800,
-        220
+        3320,
+        680
       ],
-      "id": "87679bbb-7409-443f-b7df-908fe71e6df7",
+      "id": "73771580-6de3-4b36-9d96-1f830383bec9",
       "name": "Code"
     },
     {
@@ -1129,25 +1160,12 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        2140,
-        340
+        5080,
+        1040
       ],
-      "id": "0081d1e7-eddd-4797-9c4e-55905fab370b",
+      "id": "25277c28-9241-4ccc-b7d0-f6034f8e965d",
       "name": "Wait",
       "webhookId": "311f3e9d-3397-47b2-b139-6abe588fa274"
-    },
-    {
-      "parameters": {
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        2880,
-        1000
-      ],
-      "id": "0c8ae5cd-de00-4785-8718-2b759e68134c",
-      "name": "Tiện Ích Mọi Nhà - caodungiib1"
     },
     {
       "parameters": {
@@ -1156,10 +1174,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1580,
-        820
+        4120,
+        1300
       ],
-      "id": "babf13b7-2139-4029-a94a-18802ff1baac",
+      "id": "bbdfb191-4c6c-42ad-a345-4964d5109f3e",
       "name": "Code1"
     },
     {
@@ -1169,10 +1187,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1260,
-        340
+        4020,
+        820
       ],
-      "id": "e437294f-8100-4a7d-8046-2f7c39aab713",
+      "id": "ca55f934-e2e1-41c8-b0dd-54f50ec41744",
       "name": "Code3"
     },
     {
@@ -1183,10 +1201,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        1800,
-        820
+        4360,
+        1300
       ],
-      "id": "80439dab-3b36-4433-9562-7564d300d048",
+      "id": "16859d05-2801-4ece-aafa-78e980ee2aef",
       "name": "Wait1",
       "webhookId": "3c2cbbe6-ddae-4a7a-b2cb-2b206905c6ba"
     },
@@ -1213,10 +1231,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2200,
-        820
+        4760,
+        1300
       ],
-      "id": "85a12c8e-8d82-48a6-8a8e-50e61fd4602c",
+      "id": "8415aded-2e72-4198-ad38-7553f7ab028e",
       "name": "HTTP Request15"
     },
     {
@@ -1226,10 +1244,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2400,
-        820
+        4960,
+        1300
       ],
-      "id": "eab6af8a-4544-4c18-a02f-328043d5caf0",
+      "id": "3322ccd0-28fe-47cb-a189-b422b88c70f1",
       "name": "Code4"
     },
     {
@@ -1259,10 +1277,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2620,
-        820
+        5160,
+        1300
       ],
-      "id": "56836802-3971-4e2d-b251-6fcf058d86c6",
+      "id": "43e139ec-8e4c-494f-9766-80ae96a626bf",
       "name": "If4"
     },
     {
@@ -1274,10 +1292,10 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        680
+        2540,
+        1160
       ],
-      "id": "7bab4ddd-ea94-4121-be6b-0849c254ef0d",
+      "id": "36a8dbc9-398b-4a46-b1d0-df378c129cac",
       "name": "Respond to Webhook"
     },
     {
@@ -1290,10 +1308,10 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.1,
       "position": [
-        -20,
-        880
+        2540,
+        1340
       ],
-      "id": "af340661-1edd-4634-a1bb-6a5970a99428",
+      "id": "9fd18f5d-03f7-4304-9612-654ce113c0a6",
       "name": "Respond to Webhook1"
     },
     {
@@ -1306,10 +1324,10 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
       "position": [
-        -240,
-        860
+        2320,
+        1320
       ],
-      "id": "e05e457d-7ae0-4e3f-84f0-60c4a2ee254f",
+      "id": "e8c9d160-c468-4171-ae9f-93b3a0760eb3",
       "name": "Webhook1",
       "webhookId": "648175ce-c8ec-4ea5-81a9-a5e091c9054b"
     },
@@ -1320,10 +1338,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1180,
-        840
+        3720,
+        1320
       ],
-      "id": "ebe0522c-24fa-480c-9dc5-f61f0bc0dcfa",
+      "id": "74c69cb9-e2b2-4e9f-a93f-8e8c3f9e043a",
       "name": "Code in JavaScript"
     },
     {
@@ -1333,10 +1351,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        480,
-        860
+        3040,
+        1320
       ],
-      "id": "015084e6-2c05-42b7-ab17-0f8f5ae5e853",
+      "id": "b00b2ff7-4b3e-4c44-829c-8a5626defdb9",
       "name": "Code in JavaScript1"
     },
     {
@@ -1353,10 +1371,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        560,
-        0
+        3100,
+        480
       ],
-      "id": "8a570248-06f7-4306-a6d8-6f1840dce383",
+      "id": "fce91f81-8fc4-409a-b5f6-7508888ed8b2",
       "name": "Telegram1",
       "webhookId": "c8f16196-d76b-439c-936d-a731d4266b45",
       "notesInFlow": true
@@ -1388,10 +1406,10 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
       "position": [
-        300,
-        0
+        2840,
+        480
       ],
-      "id": "0995570c-159b-4530-93b3-60f4a616f4cc",
+      "id": "603d66fe-c59e-4d1e-b155-8122caa42d40",
       "name": "Google Sheets5"
     },
     {
@@ -1399,11 +1417,269 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        0
+        2560,
+        480
       ],
-      "id": "5db3c301-f0f8-4414-82eb-4feb45571dab",
+      "id": "1f09b31a-aac7-4c0b-9c44-58a07fd066e9",
       "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/934090693112018/messages",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $json.body.access_token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"122110536783148485_1833583694013261\"\n  },\n  \"message\": {\n    \"text\": \"Chào bạn, Mình gửi bạn link sản phẩm nhé ạ: https://s.shopee.vn/9UvkYrMOoa\"\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2980,
+        280
+      ],
+      "id": "a9c545e2-55de-440f-ab5b-0457c0a50866",
+      "name": "HTTP Request12"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/934090693112018",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "name,access_token"
+            },
+            {
+              "name": "access_token",
+              "value": "EAATc2rOiDYsBP1CmYOwZAf8pNcZCZB6UMVCYc5rkzWJDOuI3oQG4cq3ZAjlLVHRZAt4WZCjBVeqB7i7YTCY65S7V9wHXEIHtL8JqVZAc3WNNReRjMsOaVgo3ifzUP4EN8HyeNnlBszqxtGstT2iweHlZAVVDjmaP6GDXy2DgZCyHZAy9aXJ961IXkrNzxwWnBZB"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2760,
+        280
+      ],
+      "id": "1b1ce464-add7-4428-a5d3-a947715b8692",
+      "name": "HTTP Request5"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "5f726d38-a652-473a-bbe5-133c248c599c",
+              "leftValue": "={{ ($('Loop Over Items').item.json.comment_status || '').split('_').shift() }}",
+              "rightValue": "={{ $('HTTP Request3').item.json.body.id }}",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        3740,
+        840
+      ],
+      "id": "23962371-cab3-4209-aa1a-1a3a8e3e80de",
+      "name": "If5"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('HTTP Request3').item.json.body.id }}/messages",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request3').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('If5').item.json.comment_status }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào bạn, mình gửi bạn thông tin sản phẩm nhé ạ. Bạn bấm vào nút bên dưới để xem thêm hoặc đặt hàng nha 👇\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Google Sheets1').item.json['Link Shopee'] }}\",\n            \"title\": \"Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4660,
+        1040
+      ],
+      "id": "d33f17b4-6707-433f-98b9-86c6ba106e94",
+      "name": "HTTP Request13"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('HTTP Request1').item.json.body.id }}/messages",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request1').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào bạn, mình gửi bạn thông tin sản phẩm nhé ạ. Bạn bấm vào nút bên dưới để xem thêm hoặc đặt hàng nha 👇\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Google Sheets').item.json['Link Shopee'] }}\",\n            \"title\": \"Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        6040,
+        1300
+      ],
+      "id": "7e07772e-4c1d-4b07-b397-8f6809c47718",
+      "name": "HTTP Request14"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất. \nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\"Cảm ơn bạn đã quan tâm! Mình đã gửi thông tin chi tiết và link sản phẩm vào tin nhắn cho bạn rồi nhé. Vui lòng kiểm tra hộp thư Messenger ạ!\"\n\nYêu cầu: \nKhông thêm link. \nKhông thêm text trước câu trả lời. Chỉ trả về 1 câu hoàn chỉnh. \nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước. \nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        3960,
+        1040
+      ],
+      "id": "b8e4f999-e4eb-4563-89d0-b3444216eee2",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('If5').item.json.comment_status }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request3').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4360,
+        1040
+      ],
+      "id": "28565f9b-b3cd-4c57-a26c-725b2c9bd495",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất. \nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\"Cảm ơn bạn đã quan tâm! Mình đã gửi thông tin chi tiết và link sản phẩm vào tin nhắn cho bạn rồi nhé. Vui lòng kiểm tra hộp thư Messenger ạ!\"\n\nYêu cầu: \nKhông thêm link. \nKhông thêm text trước câu trả lời. Chỉ trả về 1 câu hoàn chỉnh. \nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước. \nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        5440,
+        1300
+      ],
+      "id": "51a445a0-63cd-4ef2-bc64-c69dcbb09563",
+      "name": "AI Agent2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $json.output }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('HTTP Request1').item.json.body.access_token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5780,
+        1300
+      ],
+      "id": "fc2c05f9-3c85-4a33-b1da-76af5ddb2945",
+      "name": "HTTP Request4"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        5380,
+        1480
+      ],
+      "id": "de4afbe2-ff18-493a-a70a-f24011ad574d",
+      "name": "Google Gemini Chat Model1"
     }
   ],
   "pinData": {},
@@ -1413,6 +1689,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 0,
-  "updatedAt": "2026-01-31T06:02:23.000Z",
-  "versionId": "a9fe1f14-009b-4a4d-9193-4d220ac56fb8"
+  "updatedAt": "2026-03-09T11:13:21.000Z",
+  "versionId": "093e255c-d959-498c-b282-ce641f18d983"
 }
