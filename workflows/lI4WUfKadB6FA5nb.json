@@ -85,33 +85,6 @@
         ]
       ]
     },
-    "AI Agent": {
-      "main": [
-        [
-          {
-            "node": "HTTP Request2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          },
-          {
-            "node": "AI Agent1",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "HTTP Request2": {
       "main": [
         [
@@ -223,7 +196,7 @@
       "main": [
         [
           {
-            "node": "AI Agent",
+            "node": "HTTP Request2",
             "type": "main",
             "index": 0
           }
@@ -362,14 +335,14 @@
       "main": [
         [
           {
-            "node": "Loop Over Items",
+            "node": "Code3",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "AI Agent1",
+            "node": "Code5",
             "type": "main",
             "index": 0
           }
@@ -381,6 +354,13 @@
         [
           {
             "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Loop Over Items",
             "type": "main",
             "index": 0
           }
@@ -436,6 +416,28 @@
         [
           {
             "node": "AI Agent2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code5": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
             "type": "ai_languageModel",
             "index": 0
           }
@@ -856,41 +858,6 @@
     },
     {
       "parameters": {
-        "promptType": "define",
-        "text": "=Bạn chỉ cần trả về đúng một câu duy nhất. \nViết một câu có nghĩa tương tự mẫu sau, có icon để câu nói sinh động hơn:\"Cảm ơn bạn đã quan tâm! Mình đã gửi thông tin chi tiết và link sản phẩm vào tin nhắn cho bạn rồi nhé. Vui lòng kiểm tra hộp thư Messenger ạ!\"\n\nYêu cầu: \nKhông thêm link. \nKhông thêm text trước câu trả lời. Chỉ trả về 1 câu hoàn chỉnh. \nCâu trả về mỗi lần phải khác nhau và không được lặp lại cấu trúc, từ ngữ hoặc biểu tượng của các lần trước. \nKhông được trả lại đúng câu mẫu hoặc câu đã từng trả.",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.8,
-      "position": [
-        4260,
-        820
-      ],
-      "id": "b2acfd89-813a-4bd3-ae6a-eed1104bfac6",
-      "name": "AI Agent"
-    },
-    {
-      "parameters": {
-        "modelName": "models/gemini-2.5-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        3600,
-        1100
-      ],
-      "id": "2f8477bd-8458-469f-b9f6-bff569e626e3",
-      "name": "Google Gemini Chat Model",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "qZFQ5JYRlE4Vo0fV",
-          "name": "Centerno08"
-        }
-      }
-    },
-    {
-      "parameters": {
         "method": "POST",
         "url": "=https://graph.facebook.com/v24.0/{{ $('Loop Over Items').item.json.comment_status }}/comments ",
         "sendQuery": true,
@@ -898,7 +865,7 @@
           "parameters": [
             {
               "name": "message",
-              "value": "={{ $json.output }} {{ $('Google Sheets1').item.json['Link Shopee'] }}"
+              "value": "=Xem sản phẩm tại:\n👉 {{ $json.LinkShopee }}"
             },
             {
               "name": "access_token",
@@ -917,7 +884,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4900,
+        4860,
         820
       ],
       "id": "0f783716-eef5-4af0-8509-31eec77ba263",
@@ -1209,8 +1176,8 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        5080,
-        1040
+        5160,
+        1020
       ],
       "id": "25277c28-9241-4ccc-b7d0-f6034f8e965d",
       "name": "Wait",
@@ -1236,7 +1203,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4020,
+        3980,
         820
       ],
       "id": "ca55f934-e2e1-41c8-b0dd-54f50ec41744",
@@ -1594,17 +1561,18 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('If5').item.json.comment_status }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào bạn, mình gửi bạn thông tin sản phẩm nhé ạ. Bạn bấm vào nút bên dưới để xem thêm hoặc đặt hàng nha 👇\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Google Sheets1').item.json['Link Shopee'] }}\",\n            \"title\": \"Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('If5').item.json.comment_status }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào bạn, mình gửi bạn thông tin sản phẩm nhé ạ. Bạn bấm vào nút bên dưới để xem thêm hoặc đặt hàng nha 👇\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Code5').item.json.LinkShopee }}\",\n            \"title\": \"Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4660,
+        4880,
         1040
       ],
       "id": "d33f17b4-6707-433f-98b9-86c6ba106e94",
-      "name": "HTTP Request13"
+      "name": "HTTP Request13",
+      "onError": "continueErrorOutput"
     },
     {
       "parameters": {
@@ -1621,7 +1589,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào bạn, mình gửi bạn thông tin sản phẩm nhé ạ. Bạn bấm vào nút bên dưới để xem thêm hoặc đặt hàng nha 👇\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Google Sheets').item.json['Link Shopee'] }}\",\n            \"title\": \"Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
+        "jsonBody": "={\n  \"recipient\": {\n    \"comment_id\": \"{{ $('Webhook1').item.json.body.entry[0].changes[0].value.comment_id }}\"\n  },\n  \"message\": {\n    \"attachment\": {\n      \"type\": \"template\",\n      \"payload\": {\n        \"template_type\": \"button\",\n        \"text\": \"Chào bạn, mình gửi bạn thông tin sản phẩm nhé ạ. Bạn bấm vào nút bên dưới để xem thêm hoặc đặt hàng nha 👇\",\n        \"buttons\": [\n          {\n            \"type\": \"web_url\",\n            \"url\": \"{{ $('Code1').item.json.LinkShopee }}\",\n            \"title\": \"Xem sản phẩm\"\n          }\n        ]\n      }\n    }\n  }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -1642,7 +1610,7 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.8,
       "position": [
-        3960,
+        4200,
         1040
       ],
       "id": "b8e4f999-e4eb-4563-89d0-b3444216eee2",
@@ -1676,7 +1644,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4360,
+        4580,
         1040
       ],
       "id": "28565f9b-b3cd-4c57-a26c-725b2c9bd495",
@@ -1750,6 +1718,39 @@
           "name": "Centerno08"
         }
       }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Lấy chuỗi link từ Google Sheets\nconst gs = $item(0).$node[\"Google Sheets1\"].json;\nconst text = gs[\"Link Shopee\"];\n\n// Tách theo xuống dòng (cả \\n hoặc \\r\\n)\nconst links = text.split(/\\r?\\n/).map(l => l.trim()).filter(l => l !== '');\n\n// Random 1 link trong danh sách\nconst randomLink = links[Math.floor(Math.random() * links.length)];\n\n// Tạo đoạn random để tránh spam Facebook\nconst randomParam = Math.random().toString(36).substring(2, 8);\n\n// Gắn UTM/tham số random vào link Shopee\nconst finalLink = `${randomLink}?fb=${randomParam}`;\n\nreturn [\n  {\n    json: {\n      LinkShopee: finalLink\n    }\n  }\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3980,
+        1040
+      ],
+      "id": "436ee5f1-d442-4687-9763-3f1dcd09b5d3",
+      "name": "Code5"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-flash",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        3580,
+        1100
+      ],
+      "id": "2f8477bd-8458-469f-b9f6-bff569e626e3",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "qZFQ5JYRlE4Vo0fV",
+          "name": "Centerno08"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -1759,6 +1760,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-03-09T14:43:33.000Z",
-  "versionId": "039f42a1-5ccd-4ede-b240-0df3c607d74e"
+  "updatedAt": "2026-03-13T17:23:12.000Z",
+  "versionId": "afc355bd-ef2a-468a-9c01-849775814d2c"
 }
