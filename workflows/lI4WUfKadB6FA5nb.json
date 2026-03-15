@@ -386,6 +386,13 @@
             "type": "main",
             "index": 0
           }
+        ],
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
         ]
       ]
     },
@@ -1648,7 +1655,8 @@
         1040
       ],
       "id": "28565f9b-b3cd-4c57-a26c-725b2c9bd495",
-      "name": "HTTP Request"
+      "name": "HTTP Request",
+      "onError": "continueErrorOutput"
     },
     {
       "parameters": {
@@ -1760,6 +1768,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-03-13T17:23:12.000Z",
-  "versionId": "afc355bd-ef2a-468a-9c01-849775814d2c"
+  "updatedAt": "2026-03-15T11:52:48.000Z",
+  "versionId": "f62ee3f7-b7e2-4e26-beb8-15683183dc29"
 }
