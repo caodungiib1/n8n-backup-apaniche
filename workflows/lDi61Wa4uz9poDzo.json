@@ -1,0 +1,678 @@
+{
+  "active": false,
+  "connections": {
+    "Clean_Prompt": {
+      "main": [
+        [
+          {
+            "node": "Setup_first",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image_landscape2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image_portrait2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Up Binary Data1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items1": {
+      "main": [
+        [
+          {
+            "node": "Aggregate1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate1": {
+      "main": [
+        [
+          {
+            "node": "Media_id",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2026-03-24T09:16:33.804Z",
+  "id": "lDi61Wa4uz9poDzo",
+  "meta": null,
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        -400,
+        120
+      ],
+      "id": "2573c5fc-1bec-461e-bea3-5d49b12e749c",
+      "name": "On form submission",
+      "webhookId": "cc19e87c-fdfe-4375-acbb-aa2577cd5f7d"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        260,
+        120
+      ],
+      "id": "95d8bf1e-75e2-4c74-97b5-2019e6782420",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "content": "## Lưu ý\nHướng dẫn lấy Project ID và Authorization bạn có thể tham khảo [tại đây.](https://workflowfree.com/huong-dan-lay-authorization-va-project_id-cho-quy-trinh-tu-dong-hoa-tao-video-voi-google-veo-3-1/)\n\nWorkflow được chia sẻ trên trên website: [workflowfree.com](http://workflowfree.com)\n- Chia sẻ các quy trình tự động hoá N8N\n\n![Guide](https://workflowfree.com/wp-content/uploads/2025/04/Dang-video-len-fanapage-n8n-9.jpg)\n\n## Theo dõi mình qua:\nFacebook: [fb.com/mr.linh.dinh](http://fb.com/mr.linh.dinh)\nThreads: [@linh.dinhxuan](https://www.threads.net/@linh.dinhxuan)\nInstagram: [IG/linh.dinhxuan](https://www.instagram.com/linh.dinhxuan/)",
+        "height": 704,
+        "width": 400
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -100,
+        340
+      ],
+      "typeVersion": 1,
+      "id": "8773a7d2-00b3-4786-8843-a63dcc02e00e",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "## Cài đặt trước khi chạy\n- Copy Project ID và Authorization trước khi chạy quy trình, đảm bảo Authorization còn hiệu lực\n- Hướng dẫn lấy Project ID và Authorization bạn có thể tham khảo [tại đây.](https://workflowfree.com/huong-dan-lay-authorization-va-project_id-cho-quy-trinh-tu-dong-hoa-tao-video-voi-google-veo-3-1/)\n- Nhập Api của max-studio.shop",
+        "height": 448
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -40,
+        -160
+      ],
+      "typeVersion": 1,
+      "id": "a5843085-e62e-4449-9844-707cbd47dde6",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "068bd74d-415f-4755-9a38-b4ff7b574884",
+              "name": "Project_ID",
+              "value": "<input project id>",
+              "type": "string"
+            },
+            {
+              "id": "57844e44-ee4c-4122-a391-eec574a8e9bd",
+              "name": "Authorization",
+              "value": "<input Authorization>",
+              "type": "string"
+            },
+            {
+              "id": "82242124-6bf2-40a2-9007-862fbefabb7c",
+              "name": "Api max-studio",
+              "value": "<Input api max-studio>",
+              "type": "string"
+            },
+            {
+              "id": "ab3a8b54-3449-460a-82c3-3e2c5c0997e3",
+              "name": "Model",
+              "value": "={{ $('On form submission').item.json.Model }}",
+              "type": "string"
+            },
+            {
+              "id": "bf10dc62-5f8f-433c-bcc7-34ccf4aaf311",
+              "name": "Ratio",
+              "value": "={{ $('On form submission').item.json.Ratio }}",
+              "type": "string"
+            },
+            {
+              "id": "98b580d4-6b0d-4dcc-9dd8-23e17b6430b9",
+              "name": "Prompt image",
+              "value": "={{ $json.cleanedPrompt }}",
+              "type": "string"
+            },
+            {
+              "id": "86fe6d66-c6d3-440d-8841-33db3bdbc38f",
+              "name": "Quantity",
+              "value": "={{ $('On form submission').item.json.Quantity }}",
+              "type": "string"
+            },
+            {
+              "id": "2a3893f6-7741-428b-9dc8-2fd2a68016c0",
+              "name": "Generate",
+              "value": "={{ $('On form submission').item.json.Generate }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        40,
+        120
+      ],
+      "id": "7d95f453-e814-420f-a2ce-d20d6d7f75e3",
+      "name": "Setup_first"
+    },
+    {
+      "parameters": {
+        "jsCode": "function cleanPromptForBanana(str) {\n  if (!str) return \"\";\n\n  return str\n    .normalize(\"NFC\") // Chuẩn hóa Unicode (giữ tiếng Việt)\n\n    // Smart quotes → ASCII\n    .replace(/[“”]/g, '\"')\n    .replace(/[‘’]/g, \"'\")\n\n    // En dash / Em dash → \"-\"\n    .replace(/–|—/g, \"-\")\n\n    // Xóa ký tự control ẩn (KHÔNG xóa Unicode tiếng Việt)\n    .replace(/[\\u0000-\\u001F\\u007F]/g, \"\")\n\n    // Chuẩn hóa khoảng trắng\n    .replace(/\\s+/g, \" \")\n\n    .trim();\n}\n\nfor (let i = 0; i < items.length; i++) {\n  const prompt = items[i].json[\"Prompt image\"] || \"\";\n  items[i].json.cleanedPrompt = cleanPromptForBanana(prompt);\n}\n\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -200,
+        120
+      ],
+      "id": "28209f8c-fb4a-45f8-a42c-c426824a90fe",
+      "name": "Clean_Prompt"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        520,
+        120
+      ],
+      "id": "4db55cab-37d2-489d-8dbf-f25fa475a989",
+      "name": "Text to image"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        740,
+        120
+      ],
+      "id": "a9b38068-591e-4840-83ed-3ae8b979ffd4",
+      "name": "Check Status2"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1160,
+        160
+      ],
+      "id": "65beebab-cd96-4c67-8db9-780d4ce50249",
+      "name": "Wait5",
+      "webhookId": "5f4f0463-9fb2-4342-820c-6f7baf9482f7"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        920,
+        100
+      ],
+      "id": "0ff346a7-f8d6-40e4-b09a-46df0b743440",
+      "name": "Switch6"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ffc46c11-ff07-49b1-8d8b-94bc77a47096",
+              "name": "Image_upload",
+              "value": "IMAGE_ASPECT_RATIO_LANDSCAPE",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1160,
+        720
+      ],
+      "id": "52414ea3-0a80-478e-b5d2-bc214c5210fa",
+      "name": "Image_landscape2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "58a02e9f-74f5-46a1-bae8-b62590362880",
+              "name": "Image_upload",
+              "value": "IMAGE_ASPECT_RATIO_PORTRAIT",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1160,
+        520
+      ],
+      "id": "8632a3a7-c780-4855-a514-da30a1ee0875",
+      "name": "Image_portrait2"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        960,
+        620
+      ],
+      "id": "aa21e832-4b4c-491f-a5e3-07b6c86afe74",
+      "name": "Switch7"
+    },
+    {
+      "parameters": {
+        "functionCode": "let results = [];\n\n// Lấy item gốc từ node Form Submission (dù node code nằm bất kỳ đâu)\nconst formItem = $items(\"On form submission\", 0)[0];\n\nif (!formItem.binary) {\n    throw new Error(\"Form item does not contain binary data\");\n}\n\nconst binaries = formItem.binary;\n\nfor (const key of Object.keys(binaries)) {\n    results.push({\n        json: {\n            fileName: binaries[key].fileName,\n            mimeType: binaries[key].mimeType,\n        },\n        binary: {\n            [key]: binaries[key],\n        }\n    });\n}\n\nreturn results;\n"
+      },
+      "name": "Split Up Binary Data1",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        520,
+        380
+      ],
+      "typeVersion": 1,
+      "id": "e0bceb7c-58b3-4e4c-8dab-4e74db60ce6e"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        720,
+        380
+      ],
+      "id": "fb5452b7-1b62-4b44-8391-2bbe336148ca",
+      "name": "Loop Over Items1"
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "name"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        960,
+        360
+      ],
+      "id": "c16754e4-5556-4dbf-b1d9-b197d7b73a17",
+      "name": "Aggregate1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        740,
+        620
+      ],
+      "id": "0092bd57-92a3-43e2-8182-0bbc2bf6d122",
+      "name": "Extract from File3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://aisandbox-pa.googleapis.com/v1:uploadUserImage",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Setup_first').item.json.Authorization }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"imageInput\": {\n    \"aspectRatio\": \"{{ $json.Image_upload }}\",\n    \"isUserUploaded\": true,\n    \"mimeType\": \"image/jpeg\",\n    \"rawImageBytes\": \"{{ $('Extract from File3').item.json.Start_image }}\"\n  },\n  \"clientContext\": {\n    \"sessionId\": \"{{ $('Setup_first').item.json.sessionId }}\",\n    \"tool\": \"ASSET_MANAGER\"\n  }\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1360,
+        620
+      ],
+      "id": "f868898a-0d67-4ded-8bc7-e89854a561e2",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "36af2b8a-9722-4139-9380-791c1dc8ffa7",
+              "name": "name",
+              "value": "={{ $json.mediaGenerationId.mediaGenerationId }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1380,
+        860
+      ],
+      "id": "b2008e26-9b5d-4de7-8a56-40615ece9f21",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1360,
+        360
+      ],
+      "id": "11db71e8-2356-40df-a69a-f2580dd9b4c8",
+      "name": "Image to image"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9b5bc8e8-39c4-4bf2-82c1-f6affa69ae5c",
+              "name": "data",
+              "value": "={{ $json.name }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1160,
+        360
+      ],
+      "id": "7f734262-c0fb-465e-969d-d6007d857da1",
+      "name": "Media_id"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        2160,
+        80
+      ],
+      "id": "a3dbb9a2-c3c6-4716-a58d-b0f219d3db87",
+      "name": "Download image"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        2160,
+        380
+      ],
+      "id": "2fa03ebd-8136-4639-91af-53aafbf7e613",
+      "name": "Upscale 2K 4K"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        1780,
+        340
+      ],
+      "id": "2779837f-5735-4880-aa0a-8cfc191b76bd",
+      "name": "Switch8"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1780,
+        620
+      ],
+      "id": "688c03ce-8196-41cf-b653-2aeda6d2061e",
+      "name": "Wait6",
+      "webhookId": "5f4f0463-9fb2-4342-820c-6f7baf9482f7"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1580,
+        360
+      ],
+      "id": "e41668b7-dc5d-4f56-9e93-db18903c85af",
+      "name": "Check Status"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        2360,
+        580
+      ],
+      "id": "9d574a75-5b49-4511-8945-ee7d3b660208",
+      "name": "Switch9"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2540,
+        620
+      ],
+      "id": "a3b6a0d6-11db-43c7-a2c2-ebf76f0e63eb",
+      "name": "Wait7",
+      "webhookId": "5f4f0463-9fb2-4342-820c-6f7baf9482f7"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        2180,
+        600
+      ],
+      "id": "24952349-5af6-4052-b058-c006656f5350",
+      "name": "Check Status1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        2540,
+        400
+      ],
+      "id": "edf8ed21-afbf-4d1a-9ec0-7ebce112b57e",
+      "name": "Download image1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a67b303c-df5b-44ae-9ed3-02960d1b6194",
+              "name": "fifeUrl",
+              "value": "={{ $json.result[0].fifeUrl }}",
+              "type": "string"
+            },
+            {
+              "id": "140adcdd-4d4f-4223-8997-c874ef7266e0",
+              "name": "mediaGenerationId",
+              "value": "={{ $json.result[0].mediaGenerationId }}",
+              "type": "string"
+            },
+            {
+              "id": "1b469e5f-b7bf-4c87-8c38-bef7c74810a3",
+              "name": "balance",
+              "value": "={{ $json.balance }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1960,
+        80
+      ],
+      "id": "640b2763-2af3-41b2-b0ef-ebc6fea2defd",
+      "name": "Result"
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "data",
+        "options": {
+          "fileName": "=Create{{ new Date().getTime() }}.jpg"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        2540,
+        80
+      ],
+      "id": "beaeb02a-a38e-442f-b163-af2e58a4de99",
+      "name": "Convert to File3"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        2360,
+        80
+      ],
+      "id": "f8bda6cb-0fdf-476d-b4ee-51c5afb9dde1",
+      "name": "Extract from File1"
+    },
+    {
+      "parameters": {
+        "content": "## Upscale 2K 4K\nChange resolution value 2K or 4K",
+        "height": 592,
+        "width": 768
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        2040,
+        280
+      ],
+      "typeVersion": 1,
+      "id": "4acd096c-2268-4743-8f3c-a5450c37e090",
+      "name": "Sticky Note9"
+    },
+    {
+      "parameters": {
+        "content": " Lưu ý: Có thể upload nhiều ảnh trong 1 lần điền form, tối đa 20 ảnh khi chọn chế độ image to image",
+        "height": 272
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -480,
+        20
+      ],
+      "typeVersion": 1,
+      "id": "f1f27671-be25-4ec4-a64f-f36fbd36464a",
+      "name": "Sticky Note"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-03-24T09:16:33.804Z",
+  "versionId": "340d37d9-cb87-4a0d-846b-54e540aaf797"
+}
