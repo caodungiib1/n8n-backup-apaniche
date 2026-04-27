@@ -418,17 +418,6 @@
         ]
       ]
     },
-    "Google Gemini Chat Model1": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent2",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Code5": {
       "main": [
         [
@@ -440,11 +429,22 @@
         ]
       ]
     },
-    "Google Gemini Chat Model": {
+    "OpenAI Chat Model": {
       "ai_languageModel": [
         [
           {
             "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent2",
             "type": "ai_languageModel",
             "index": 0
           }
@@ -1709,26 +1709,6 @@
     },
     {
       "parameters": {
-        "modelName": "models/gemini-2.5-flash",
-        "options": {}
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
-      "position": [
-        5380,
-        1480
-      ],
-      "id": "de4afbe2-ff18-493a-a70a-f24011ad574d",
-      "name": "Google Gemini Chat Model1",
-      "credentials": {
-        "googlePalmApi": {
-          "id": "qZFQ5JYRlE4Vo0fV",
-          "name": "Centerno08"
-        }
-      }
-    },
-    {
-      "parameters": {
         "jsCode": "// Lấy chuỗi link từ Google Sheets\nconst gs = $item(0).$node[\"Google Sheets1\"].json;\nconst text = gs[\"Link Shopee\"];\n\n// Tách theo xuống dòng (cả \\n hoặc \\r\\n)\nconst links = text.split(/\\r?\\n/).map(l => l.trim()).filter(l => l !== '');\n\n// Random 1 link trong danh sách\nconst randomLink = links[Math.floor(Math.random() * links.length)];\n\n// Tạo đoạn random để tránh spam Facebook\nconst randomParam = Math.random().toString(36).substring(2, 8);\n\n// Gắn UTM/tham số random vào link Shopee\nconst finalLink = `${randomLink}?fb=${randomParam}`;\n\nreturn [\n  {\n    json: {\n      LinkShopee: finalLink\n    }\n  }\n];"
       },
       "type": "n8n-nodes-base.code",
@@ -1742,21 +1722,51 @@
     },
     {
       "parameters": {
-        "modelName": "models/gemini-2.5-flash",
+        "model": {
+          "__rl": true,
+          "value": "openclaw",
+          "mode": "list",
+          "cachedResultName": "openclaw"
+        },
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
-      "typeVersion": 1,
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
       "position": [
-        3580,
-        1100
+        3640,
+        1080
       ],
-      "id": "2f8477bd-8458-469f-b9f6-bff569e626e3",
-      "name": "Google Gemini Chat Model",
+      "id": "5d3b07e4-bc47-441b-92ea-a89f0ba48e9f",
+      "name": "OpenAI Chat Model",
       "credentials": {
-        "googlePalmApi": {
-          "id": "qZFQ5JYRlE4Vo0fV",
-          "name": "Centerno08"
+        "openAiApi": {
+          "id": "AIv2GNggx5MFlKH8",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "openclaw",
+          "mode": "list",
+          "cachedResultName": "openclaw"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        5260,
+        1580
+      ],
+      "id": "f36abe07-66f9-4343-97a7-ce14558a8044",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "AIv2GNggx5MFlKH8",
+          "name": "OpenAi account"
         }
       }
     }
@@ -1768,6 +1778,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-04-19T01:11:59.000Z",
-  "versionId": "f62ee3f7-b7e2-4e26-beb8-15683183dc29"
+  "updatedAt": "2026-04-27T11:09:17.000Z",
+  "versionId": "2797f939-78f4-43ab-a4e5-60fbca889af0"
 }
