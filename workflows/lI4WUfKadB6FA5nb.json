@@ -548,7 +548,7 @@
     },
     {
       "parameters": {
-        "chatId": "5553479863",
+        "chatId": "-5150194455",
         "text": "=Bài này đang chưa có link shopee nè: \n<a href=\"{{ $json[\"Link Facebook\"] }}\">Xem video Facebook</a>",
         "replyMarkup": "forceReply",
         "forceReply": {},
@@ -1382,7 +1382,7 @@
     },
     {
       "parameters": {
-        "chatId": "5553479863",
+        "chatId": "-5150194455",
         "text": "=Bài này đang chưa có link shopee nè: \n<a href=\"{{ $json[\"Link Facebook\"] }}\">Xem video Facebook</a>",
         "replyMarkup": "forceReply",
         "forceReply": {},
@@ -1778,6 +1778,6 @@
   "staticData": null,
   "tags": [],
   "triggerCount": 2,
-  "updatedAt": "2026-05-11T02:02:36.000Z",
-  "versionId": "2797f939-78f4-43ab-a4e5-60fbca889af0"
+  "updatedAt": "2026-06-03T03:21:42.000Z",
+  "versionId": "77002057-440d-40df-8382-b35e07491202"
 }
