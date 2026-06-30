@@ -1,0 +1,71 @@
+{
+  "active": false,
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2026-06-30T13:55:11.834Z",
+  "id": "dyFSY8xAV9fR8opb",
+  "meta": null,
+  "name": "Tạo Ảnh",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "7571f68d-8f68-4804-b3cc-79fac0987bb8",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f6ef66d1-a1ad-481c-8fe2-7183d34e2360",
+              "name": "projectID",
+              "value": "a9c08289-a33d-40aa-bafc-788a041abc68",
+              "type": "string"
+            },
+            {
+              "id": "5423e8c1-b6ba-4471-9968-b2048b831d83",
+              "name": "prompt",
+              "value": "2 con ngựa trên thao nguyên cỏ xanh",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        0
+      ],
+      "id": "2d2a9435-ceaf-474b-ad6b-3c93a00fd8d0",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-06-30T13:55:16.000Z",
+  "versionId": "0e9f1ecc-4d44-4b9c-96a3-b036d01dd8e5"
+}
