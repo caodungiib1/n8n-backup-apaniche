@@ -1,0 +1,2421 @@
+{
+  "active": false,
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Set1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file5": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript3": {
+      "main": [
+        [
+          {
+            "node": "Download file5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets4": {
+      "main": [
+        [
+          {
+            "node": "If5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If4": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items2": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Download file2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript5": {
+      "main": [
+        [
+          {
+            "node": "If6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request18": {
+      "main": [
+        [
+          {
+            "node": "Download file11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload a Local File": {
+      "main": [
+        [
+          {
+            "node": "Manual Publish1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Publish1": {
+      "main": [
+        [
+          {
+            "node": "Wait for Facebook Reel",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If5": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Code in JavaScript5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If6": {
+      "main": [
+        [],
+        [
+          {
+            "node": "If4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request9": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request10": {
+      "main": [
+        [
+          {
+            "node": "Verify Image Post A & Get Permalink",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate3": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request12",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Aggregate3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file8": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items3": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Download file8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request11": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request12": {
+      "main": [
+        [
+          {
+            "node": "Verify Image Post B & Get Permalink",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets10": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Sheets2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request14",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request15",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file9": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders4": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript6": {
+      "main": [
+        [
+          {
+            "node": "If7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If7": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Download file9",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
+      "main": [
+        [
+          {
+            "node": "Aggregate2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders5": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Download file11": {
+      "main": [
+        [
+          {
+            "node": "Upload a Local File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set1": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript7": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request18",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait for Facebook Reel": {
+      "main": [
+        [
+          {
+            "node": "Verify Reel & Get Permalink",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verify Reel & Get Permalink": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets10",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verify Image Post A & Get Permalink": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verify Image Post B & Get Permalink": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2026-07-27T13:41:36.912Z",
+  "id": "g8glL7vfklvSTHJI",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "Dang B�i",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 11,
+              "triggerAtMinute": 12
+            },
+            {
+              "triggerAtHour": 13,
+              "triggerAtMinute": 26
+            },
+            {
+              "triggerAtHour": 16,
+              "triggerAtMinute": 15
+            },
+            {
+              "triggerAtHour": 19,
+              "triggerAtMinute": 24
+            },
+            {
+              "triggerAtHour": 21,
+              "triggerAtMinute": 27
+            },
+            {
+              "triggerAtHour": 9,
+              "triggerAtMinute": 18
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1460,
+        740
+      ],
+      "id": "3caca74b-3fd4-426b-9f77-9cde168d4a74",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Edit Fields2').first().json.ID_Post }}/thumbnails",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('Edit Fields2').first().json.Token }}"
+            },
+            {
+              "name": "is_preferred",
+              "value": "true"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "source",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        640,
+        -120
+      ],
+      "id": "af153d74-b8e4-475b-b4ac-5dc922949aa8",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        420,
+        -120
+      ],
+      "id": "b5b58690-0213-4745-9f5f-9c834ea5f816",
+      "name": "Download file5",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "fileFolder",
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "={{ $json.URL }}",
+            "mode": "url"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        20,
+        -120
+      ],
+      "id": "57a68203-4ee3-450e-bbfe-946ae0ee7c7f",
+      "name": "Search files and folders2",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// L?y t?t c? input items\nconst items = $input.all();\n\n// T?o m?ng k?t qu? ch? ch?a id c?a file jpg (an to�n, kh�ng l?i)\nconst jpgIds = items\n    .map(item => item.json)  // L?y JSON object\n    .filter(file => file?.name && file.name.toLowerCase().endsWith('.jpg')) // L?c file .jpg\n    .map(file => ({\n        json: { \n            id: file.id,\n            name: file.name,\n            type: 'thumbnail'   // g?n type d? node sau kh�ng l?i\n        }\n    }));\n\nreturn jpgIds;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        -120
+      ],
+      "id": "7f5f8fb2-8005-4471-be8c-65ea9a86661d",
+      "name": "Code in JavaScript3"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a75adf0d-8f24-456a-8002-25a0be574ed1",
+              "name": "URL",
+              "value": "https://drive.google.com/drive/folders/1GJCW9jc-DV8lImvNERvm69U7WeBkXh2D",
+              "type": "string"
+            },
+            {
+              "id": "434056b8-000c-4001-8867-3a65c786bfd1",
+              "name": "ID_Post",
+              "value": "24853671747575969",
+              "type": "string"
+            },
+            {
+              "id": "58d8f91d-2734-420b-a649-6334beb8634a",
+              "name": "Token",
+              "value": "EAAYd0J2f2LUBQC1kfZB9dv1LDRDVllv4p2CJZCDCZBnow32sgcojJGQVnvV9Wf8m2bEaZC9I7Qm8LlbFQ2f5NPYKXu7MyCeMtWnpads1oCun4tcJZAoiuyJhuuXZBgbCi3gvAOOAOWvcKyrnsM8mYuLdIlmrjJxPrfe4q6BpqjyhZCkfzkNy7PZBasIspGAXGfTZCPu7ZCsh1hpDNSJ0VANp0ZD",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -200,
+        -120
+      ],
+      "id": "21e4a915-e9bc-4e4d-961e-343fef4226ca",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1080,
+        840
+      ],
+      "id": "0063a1e4-f063-45ce-91c8-0b597290b9e3",
+      "name": "Aggregate2"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "documentId": {
+          "__rl": true,
+          "value": "={{ $('Set1').item.json.Link_sheet }}",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "={{ $now.format('MM/yyyy') }}",
+          "mode": "name"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "=NG�Y",
+              "lookupValue": "={{ $now.format('dd/MM/yyyy') }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        -1060,
+        740
+      ],
+      "id": "05259be0-da49-423a-9826-7218ee4e60dd",
+      "name": "Google Sheets4",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "2c2d45bf-84f4-4348-a47b-65622626ff3e",
+              "leftValue": "={{ $json['LINK MEDIA (?NH/VIDEO)'] }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "84652576-bbcf-4765-9879-8c4190d6e9ad",
+              "leftValue": "={{ $json['N?I DUNG B�I DANG'] }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "e6768614-8db7-43d9-be90-dcdfe6c1528a",
+              "leftValue": "={{ $json['Link B�i Dang'] }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -280,
+        740
+      ],
+      "id": "42ffd874-62ef-462b-bd28-00bb7f2ebc65",
+      "name": "If4"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        920,
+        960
+      ],
+      "id": "7ae986d7-0711-4889-b8bb-42f736524c91",
+      "name": "Download file2",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        680,
+        840
+      ],
+      "id": "8f348bbf-b7db-4ea0-a09d-19ebe09eb938",
+      "name": "Loop Over Items2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// L?y to�n b? item t? node tru?c\nconst items = $input.all();\n\n// Ch? l?y item d?u ti�n\nconst firstItem = items[0];\n\n// Tr? ra 1 item (v� n8n cho ph�p return 1 object ho?c array)\nreturn firstItem;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -660,
+        740
+      ],
+      "id": "5cd9702d-084c-4944-b3dd-454e18400b82",
+      "name": "Code in JavaScript5"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ Set1.item.json.ID_PAGE }}/video_reels",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "upload_phase",
+              "value": "start"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set1').item.json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        660
+      ],
+      "id": "143c3980-f332-41cd-98df-f55ee44b6214",
+      "name": "HTTP Request18"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('HTTP Request18').item.json.upload_url }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=OAuth {{ $('Set1').item.json.Token }}"
+            },
+            {
+              "name": "offset",
+              "value": "0"
+            },
+            {
+              "name": "file_size",
+              "value": "={{ (() => { const raw = $binary.data.fileSize; if (typeof raw === \"number\") return raw; const parts = String(raw).trim().split(/\\s+/); const n = Number(parts[0]); const unit = (parts[1] || \"B\").toUpperCase(); const multiplier = { B: 1, KB: 1024, MB: 1048576, GB: 1073741824 }[unit] || 1; return Math.round(n * multiplier); })() }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        660
+      ],
+      "id": "125793e6-3b2a-4558-9f04-10a9321ea653",
+      "name": "Upload a Local File"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{Set1.item.json.ID_PAGE}}/video_reels",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{$('Set1').item.json.Token}}"
+            },
+            {
+              "name": "video_id",
+              "value": "={{ $('HTTP Request18').item.json.video_id }}"
+            },
+            {
+              "name": "upload_phase",
+              "value": "FINISH"
+            },
+            {
+              "name": "video_state",
+              "value": "PUBLISHED"
+            },
+            {
+              "name": "description",
+              "value": "={{$('Code in JavaScript5').item.json['N?I DUNG B�I DANG']}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1260,
+        660
+      ],
+      "id": "e28e80c1-7bdb-4853-be44-f304b2a4de8a",
+      "name": "Manual Publish1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "eddc7251-72b4-43ff-9f75-245a7549273f",
+              "leftValue": "={{ $json['Ti?n D?'] }}",
+              "rightValue": "D� Dang",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -880,
+        740
+      ],
+      "id": "7dc8d516-720d-455c-8d39-13c934fd45bf",
+      "name": "If5"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "2c2d45bf-84f4-4348-a47b-65622626ff3e",
+              "leftValue": "={{ $json[\"N?I DUNG\"] }}",
+              "rightValue": "TUONG T�C V?I KH�CH : C�U H?I",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            },
+            {
+              "id": "63c73c84-d70a-4764-9368-b2b9fb93852e",
+              "leftValue": "={{ $json[\"N?I DUNG\"] }}",
+              "rightValue": "TUONG T�C V?I KH�CH : D? VUI",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -480,
+        740
+      ],
+      "id": "7866cfe9-3528-4ff1-93e1-a85568b423ad",
+      "name": "If6"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Set1').item.json.ID_PAGE }}/photos",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "published",
+              "value": "false"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set1').item.json.Token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "source",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1080,
+        960
+      ],
+      "id": "b391db7a-b5a1-4985-8d24-697eaf7b9d01",
+      "name": "HTTP Request9"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Set1').item.json.ID_PAGE }}/feed",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $('Google Sheets4').item.json['N?I DUNG B�I DANG'] }}"
+            },
+            {
+              "name": "attached_media",
+              "value": "={{ JSON.stringify($json.data) }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{$('Set1').item.json.Token}}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1260,
+        840
+      ],
+      "id": "2dfb6a62-619e-46fd-8deb-95ed50d80ea2",
+      "name": "HTTP Request10"
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        240
+      ],
+      "id": "e4e03676-1eb4-4b2e-a22f-eaeb93884d73",
+      "name": "Aggregate3"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3c28488e-1ec5-4d92-a4d2-b885ad95843c",
+              "name": "data",
+              "value": "={\"media_fbid\":\"{{ $json.body.id }}\"}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -240,
+        240
+      ],
+      "id": "544837b1-cbbc-463e-ab3e-703027a5988b",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "mode": "url",
+          "value": "={{ $('Loop Over Items3').item.json['LINK MEDIA (?NH/VIDEO)'] }}",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com(?:\\/.*|)\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -240,
+        360
+      ],
+      "id": "e0f46b7b-9946-4cb0-961c-d0320ef2e273",
+      "name": "Download file8",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -460,
+        260
+      ],
+      "id": "074194d5-ad15-4cdf-805b-ef67976f46cd",
+      "name": "Loop Over Items3"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Set1').item.json.ID_PAGE }}/photos",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "published",
+              "value": "false"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set1').item.json.Token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "source",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -80,
+        360
+      ],
+      "id": "278caf6d-7da9-4715-be68-707a1010fc8f",
+      "name": "HTTP Request11"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('Set1').item.json.ID_PAGE }}/feed",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $('Google Sheets4').item.json['N?I DUNG B�I DANG'] }}"
+            },
+            {
+              "name": "attached_media",
+              "value": "={{ JSON.stringify($json.data) }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{$('Set1').item.json.Token}}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        120,
+        240
+      ],
+      "id": "35776506-6e73-45bd-b1f0-e4ee3058e76f",
+      "name": "HTTP Request12"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "={{ $('Set1').item.json.Link_sheet }}",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "={{ $now.format('MM/yyyy') }}",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": "={{ $('Code in JavaScript5').item.json.row_number }}",
+            "Link B�i Dang": "={{ $json.permalink_url }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "NG�Y ",
+              "displayName": "NG�Y ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Th?",
+              "displayName": "Th?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Gi? Dang",
+              "displayName": "Gi? Dang",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "TUY?N N?I DUNG",
+              "displayName": "TUY?N N?I DUNG",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LO?I MEDIA",
+              "displayName": "LO?I MEDIA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LINK MEDIA (?NH/VIDEO)",
+              "displayName": "LINK MEDIA (?NH/VIDEO)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "TI�U D?\n(ch?n di?m n?i b?t d? l�m n?i dung)",
+              "displayName": "TI�U D?\n(ch?n di?m n?i b?t d? l�m n?i dung)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "N?I DUNG B�I DANG",
+              "displayName": "N?I DUNG B�I DANG",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "M� S?n Ph?m\n(paste v�o d�y)",
+              "displayName": "M� S?n Ph?m\n(paste v�o d�y)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "S?n Ph?m\n(c�ng th?c)",
+              "displayName": "S?n Ph?m\n(c�ng th?c)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "M� Cha\n(c�ng th?c)",
+              "displayName": "M� Cha\n(c�ng th?c)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "NOTE",
+              "displayName": "NOTE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Luu � / Y�u c?u Cho Media / Content",
+              "displayName": "Luu � / Y�u c?u Cho Media / Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Ngu?i th?c hi?n",
+              "displayName": "Ngu?i th?c hi?n",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Ti?n D?",
+              "displayName": "Ti?n D?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link B�i Dang",
+              "displayName": "Link B�i Dang",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1480,
+        660
+      ],
+      "id": "a36b9e88-054a-4fba-a7ab-336eb68f204a",
+      "name": "Google Sheets10",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "={{ $('Set1').item.json.Link_sheet }}",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "={{ $now.format('MM/yyyy') }}",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": "={{ $('Code in JavaScript5').item.json.row_number }}",
+            "Link B�i Dang": "={{ $json.permalink_url }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "NG�Y ",
+              "displayName": "NG�Y ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Th?",
+              "displayName": "Th?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Gi? Dang",
+              "displayName": "Gi? Dang",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "TUY?N N?I DUNG",
+              "displayName": "TUY?N N?I DUNG",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LO?I MEDIA",
+              "displayName": "LO?I MEDIA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LINK MEDIA (?NH/VIDEO)",
+              "displayName": "LINK MEDIA (?NH/VIDEO)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "TI�U D?\n(ch?n di?m n?i b?t d? l�m n?i dung)",
+              "displayName": "TI�U D?\n(ch?n di?m n?i b?t d? l�m n?i dung)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "N?I DUNG B�I DANG",
+              "displayName": "N?I DUNG B�I DANG",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "M� S?n Ph?m\n(paste v�o d�y)",
+              "displayName": "M� S?n Ph?m\n(paste v�o d�y)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "S?n Ph?m\n(c�ng th?c)",
+              "displayName": "S?n Ph?m\n(c�ng th?c)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "M� Cha\n(c�ng th?c)",
+              "displayName": "M� Cha\n(c�ng th?c)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "NOTE",
+              "displayName": "NOTE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Luu � / Y�u c?u Cho Media / Content",
+              "displayName": "Luu � / Y�u c?u Cho Media / Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Ngu?i th?c hi?n",
+              "displayName": "Ngu?i th?c hi?n",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Ti?n D?",
+              "displayName": "Ti?n D?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link B�i Dang",
+              "displayName": "Link B�i Dang",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1440,
+        840
+      ],
+      "id": "3ef57465-2f17-4239-957b-7c6b52ef2358",
+      "name": "Google Sheets2",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "={{ $('Set1').item.json.Link_sheet }}",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "={{ $now.format('MM/yyyy') }}",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": "={{ $('Code in JavaScript5').item.json.row_number }}",
+            "Link B�i Dang": "={{ $json.permalink_url }}"
+          },
+          "matchingColumns": [
+            "row_number"
+          ],
+          "schema": [
+            {
+              "id": "NG�Y ",
+              "displayName": "NG�Y ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Th?",
+              "displayName": "Th?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Gi? Dang",
+              "displayName": "Gi? Dang",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "TUY?N N?I DUNG",
+              "displayName": "TUY?N N?I DUNG",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LO?I MEDIA",
+              "displayName": "LO?I MEDIA",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LINK MEDIA (?NH/VIDEO)",
+              "displayName": "LINK MEDIA (?NH/VIDEO)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "TI�U D?\n(ch?n di?m n?i b?t d? l�m n?i dung)",
+              "displayName": "TI�U D?\n(ch?n di?m n?i b?t d? l�m n?i dung)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "N?I DUNG B�I DANG",
+              "displayName": "N?I DUNG B�I DANG",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "M� S?n Ph?m\n(paste v�o d�y)",
+              "displayName": "M� S?n Ph?m\n(paste v�o d�y)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "S?n Ph?m\n(c�ng th?c)",
+              "displayName": "S?n Ph?m\n(c�ng th?c)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "M� Cha\n(c�ng th?c)",
+              "displayName": "M� Cha\n(c�ng th?c)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "NOTE",
+              "displayName": "NOTE",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Luu � / Y�u c?u Cho Media / Content",
+              "displayName": "Luu � / Y�u c?u Cho Media / Content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Ngu?i th?c hi?n",
+              "displayName": "Ngu?i th?c hi?n",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Ti?n D?",
+              "displayName": "Ti?n D?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "Link B�i Dang",
+              "displayName": "Link B�i Dang",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        300,
+        240
+      ],
+      "id": "07a2e5e8-f2e8-4498-9add-a4ec920d98c8",
+      "name": "Google Sheets5",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('HTTP Request18').first().json.video_id }}/thumbnails",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "access_token",
+              "value": "={{ $('Set1').first().json.Token }}"
+            },
+            {
+              "name": "is_preferred",
+              "value": "true"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "source",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2540,
+        760
+      ],
+      "id": "4ae994e2-42e0-4b53-ba05-16fd737eb6c8",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2340,
+        760
+      ],
+      "id": "11f50ac7-e5d5-43e3-9bc9-4b47b5c54683",
+      "name": "Download file9",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "fileFolder",
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "={{ $('If4').first().json['LINK MEDIA (?NH/VIDEO)'] }}",
+            "mode": "url"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1660,
+        660
+      ],
+      "id": "2d1af9df-c423-48b5-bd8d-372fa10bc7f1",
+      "name": "Search files and folders4",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// L?y t?t c? input items\nconst items = $input.all();\n\n// T?o m?ng k?t qu? ch? ch?a id c?a file jpg (an to�n, kh�ng l?i)\nconst jpgIds = items\n    .map(item => item.json)  // L?y JSON object\n    .filter(file => file?.name && file.name.toLowerCase().endsWith('.jpg')) // L?c file .jpg\n    .map(file => ({\n        json: { \n            id: file.id,\n            name: file.name,\n            type: 'thumbnail'   // g?n type d? node sau kh�ng l?i\n        }\n    }));\n\nreturn jpgIds;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1880,
+        660
+      ],
+      "id": "01c06cb6-8f97-4c3e-86d8-71208a37f2ea",
+      "name": "Code in JavaScript6"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "c9fb1fda-ea04-4f35-9c75-f83cad9c80cf",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "=QR",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            },
+            {
+              "id": "b9170f59-37eb-4f4f-9af6-c321dda95e9e",
+              "leftValue": "={{ $json.name }}",
+              "rightValue": "qr",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2100,
+        660
+      ],
+      "id": "192af28f-f82c-4983-9b8d-69b507839e5f",
+      "name": "If7"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('HTTP Request10').item.json.body.id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $('If4').first().json['N?I DUNG CMT'] }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set1').first().json.Token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1660,
+        840
+      ],
+      "id": "4d8a3346-3fd8-4cf8-8434-ebea37cf4143",
+      "name": "HTTP Request14"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3c28488e-1ec5-4d92-a4d2-b885ad95843c",
+              "name": "data",
+              "value": "={\"media_fbid\":\"{{ $json.body.id }}\"}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        920,
+        840
+      ],
+      "id": "d917c4b8-d913-4b26-974f-70902877e6c0",
+      "name": "Edit Fields4"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "resource": "fileFolder",
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "={{ $json[\"LINK MEDIA (?NH/VIDEO)\"] }}",
+            "mode": "url"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -40,
+        740
+      ],
+      "id": "2c3c6904-8473-4cc8-bbfb-2d15d57d0f4d",
+      "name": "Search files and folders5",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// L?y to�n b? item t? node tru?c\nlet items = $input.all();\n\n// S?p x?p theo t�n file (1.png < 2.png < 10.png)\nitems.sort((a, b) => {\n  const nameA = a.json.name.toLowerCase();\n  const nameB = b.json.name.toLowerCase();\n  return nameA.localeCompare(nameB, undefined, { numeric: true });\n});\n\n// G?n type (image / video / other)\nfor (const item of items) {\n  const name = item.json.name.toLowerCase();\n  if (name.endsWith('.mp4') || name.endsWith('.mov')) {\n    item.json.type = 'video';\n  } else if (\n    name.endsWith('.jpg') ||\n    name.endsWith('.jpeg') ||\n    name.endsWith('.png') ||\n    name.endsWith('.webp')\n  ) {\n    item.json.type = 'image';\n  } else {\n    item.json.type = 'other';\n  }\n}\n\n// T�ch video v� ?nh\nconst videos = items.filter(i => i.json.type === 'video');\nconst images = items.filter(i => i.json.type === 'image');\n\n// N?u c� video ? ch? l?y video d?u ti�n, ngu?c l?i l?y t?t c? ?nh\nlet result;\nif (videos.length > 0) {\n  result = [videos[0]];\n} else {\n  result = images;\n}\n\n// Tr? k?t qu?\nreturn result;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        180,
+        740
+      ],
+      "id": "e8ee853c-01c8-497b-b820-9156751bb6f9",
+      "name": "Code in JavaScript7"
+    },
+    {
+      "parameters": {
+        "authentication": "serviceAccount",
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $('Switch1').item.json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        840,
+        660
+      ],
+      "id": "35067234-b529-4232-a92f-6043d4298f76",
+      "name": "Download file11",
+      "credentials": {
+        "googleApi": {
+          "id": "S9yYlBFzAqIzuELp",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2f805ef3-dcc8-4abe-9e00-5c1044f3ef35",
+              "name": "ID_PAGE",
+              "value": "108275345033341",
+              "type": "string"
+            },
+            {
+              "id": "31e38baf-cea0-41e3-be60-f87a5473df99",
+              "name": "Token",
+              "value": "EAAYd0J2f2LUBQC1kfZB9dv1LDRDVllv4p2CJZCDCZBnow32sgcojJGQVnvV9Wf8m2bEaZC9I7Qm8LlbFQ2f5NPYKXu7MyCeMtWnpads1oCun4tcJZAoiuyJhuuXZBgbCi3gvAOOAOWvcKyrnsM8mYuLdIlmrjJxPrfe4q6BpqjyhZCkfzkNy7PZBasIspGAXGfTZCPu7ZCsh1hpDNSJ0VANp0ZD",
+              "type": "string"
+            },
+            {
+              "id": "b9301261-bed7-49dc-af70-0c5e9944dd9f",
+              "name": "Link_sheet",
+              "value": "https://docs.google.com/spreadsheets/d/1-7wjnmBP2_5Voei9UM95ksWD_1JmcE385Zp_zNf1R3A/edit?gid=1724052093#gid=1724052093",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1280,
+        740
+      ],
+      "id": "0b9a1748-83c2-4e2f-9573-80278fd04629",
+      "name": "Set1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v24.0/{{ $('HTTP Request18').first().json.video_id }}/comments ",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "message",
+              "value": "={{ $('If4').first().json['N?I DUNG CMT'] }}"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ $('Set1').first().json.Token }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2760,
+        760
+      ],
+      "id": "15c99dc6-c657-47d4-a328-4c311b1c8433",
+      "name": "HTTP Request15"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Code in JavaScript7').item.json.type }}",
+                    "rightValue": "video",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "de09d1c1-7e4b-45df-a312-fa6eb458a630"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "D?ng Video"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7e5e3252-e56d-4cb0-b0cb-0ce0fab452ce",
+                    "leftValue": "={{ $('Code in JavaScript7').item.json.type }}",
+                    "rightValue": "image",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "D?ng ?nh"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        380,
+        740
+      ],
+      "id": "d278279c-1f93-4f98-a1f5-bbf6a9c3c981",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "amount": 60,
+        "unit": "seconds"
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1232,
+        -240
+      ],
+      "id": "105d92a7-1d59-4e35-a0b9-a938efaa78e9",
+      "name": "Wait for Facebook Reel",
+      "webhookId": "fe360afe-4613-4b7e-8767-471ecfa7c312"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{$('HTTP Request18').item.json.video_id}}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "id,permalink_url"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ Set1.item.json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1456,
+        -240
+      ],
+      "id": "d341bc82-beb7-48f4-a547-0ee0efb3bd8c",
+      "name": "Verify Reel & Get Permalink"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{$('HTTP Request10').item.json.body.id}}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "id,permalink_url"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ Set1.item.json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1456,
+        144
+      ],
+      "id": "5d270439-58d9-44c7-a15c-2ff4cb2bd012",
+      "name": "Verify Image Post A & Get Permalink"
+    },
+    {
+      "parameters": {
+        "url": "=https://graph.facebook.com/v24.0/{{$('HTTP Request12').item.json.body.id}}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "id,permalink_url"
+            },
+            {
+              "name": "access_token",
+              "value": "={{ Set1.item.json.Token }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1456,
+        528
+      ],
+      "id": "1b339564-e7a6-4791-8335-76d8204eef5d",
+      "name": "Verify Image Post B & Get Permalink"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-07-27T13:58:45.690Z",
+  "versionId": "d45fb27a-3337-47e9-b3db-dc35ff43bfab"
+}
