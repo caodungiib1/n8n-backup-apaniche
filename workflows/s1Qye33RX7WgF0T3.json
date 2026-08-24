@@ -1,0 +1,76 @@
+{
+  "active": false,
+  "connections": {
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2026-08-24T19:40:55.416Z",
+  "id": "s1Qye33RX7WgF0T3",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "Báo Số Dư Ngân Hàng",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "sodu-mb",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -260,
+        -240
+      ],
+      "id": "33d8afeb-83c6-4d6e-9063-c6e22bc738c4",
+      "name": "Webhook1",
+      "webhookId": "9ca2c080-956c-4cf3-978d-f1e92c60e500"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://103.110.33.156:4020/api/checkout/bank-webhook",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-webhook-secret",
+              "value": "4c6f3df4e029c28b3192efd7d4e563222064a412c596307d0515e5b396458169"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -40,
+        -240
+      ],
+      "id": "e1c46c49-01b9-4773-a9bc-98764318872e",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2026-08-24T19:50:49.000Z",
+  "versionId": "1dc20f21-e96f-4bf0-83a1-5f33143342c6"
+}
